@@ -1,0 +1,58 @@
+
+
+
+
+.background1 {
+    background-color: rgb(235, 247, 250);
+}
+
+/*******************************navbar*********************************/
+
+.header {
+
+  background-size: cover;
+  min-height: 2rem;
+}
+
+
+
+.texto0 {
+    margin-top: 3rem;
+    color: rgb(33, 33, 33);
+}
+
+.si {
+    color: rgb(11, 216, 216);
+}
+
+.image0 {
+    margin-top: 2rem;
+}
+
+
+/*******************************forms**********************************/
+
+.custom-width {
+    margin-top: 3rem;
+    max-width: 20rem;
+    width: 100%;
+}
+
+
+/****************************footer***********************************/
+
+.footer {
+margin-top: 10rem;
+margin-left: 2rem;
+}
+
+.img-footer {
+    width: 50px;
+  height: 50px;
+}
+
+.text-footer {
+    color: rgba(33, 33, 33, 0.672);
+    text-align: end;
+    margin-right: 2rem;
+}
