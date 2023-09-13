@@ -39,25 +39,35 @@
     <h1 class="texto0 text-center">Inicia sesion</h1>
     <h2 style="color:  rgb(11, 216, 216);" class="text-center">o registrate!!</h2>
 
-    <form class="container">
+    <form id="login-form" class="container">
         <div class="mb-3 custom-width1">
-            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+            <input type="text" id="username" name="username" required>
           </div>
           <div class="mb-3">
             <label for="inputPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword">
+            <input type="password" id="password" name="password" required>
               </div>
           </div>
 
           <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3">Iniciar sesion</button>
-            <button type="reset" href="./cuenta.html" class="btn btn-secondary mb-3 ml-2">Registrarse</button>
         </div>
+
+        
+    <script>
+      document.getElementById("login-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+              window.location.href="../index.html";
+      });
+  </script>
 
     <footer class="footer">
         <img class="img-footer" src="../img/reloj.png" alt="Logo de OnTime Inc">
         <span class="text-footer">OnTime Inc</span>
     </footer>
+
 </body>
 </html>
