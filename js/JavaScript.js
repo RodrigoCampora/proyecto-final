@@ -27,24 +27,32 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");
 
-    // Array para almacenar las credenciales
+    
     const credenciales = [];
 
     loginForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // Obtener los valores de correo y contraseña del formulario
+    
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
-        // Almacenar las credenciales en el array
+
         credenciales.push({ email, password });
 
-        // Mostrar las credenciales en la consola
+        
         console.log("Credenciales almacenadas:");
         console.log(credenciales);
 
-        // Restablecer el formulario
+        
         loginForm.reset();
     });
 });
+
+var nombre = localStorage.getItem('nombre');
+
+if (nombre) {
+   
+    var nombreUsuarioElement = document.getElementById('nombre-usuario');
+    nombreUsuarioElement.textContent = nombre;
+}
