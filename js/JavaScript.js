@@ -24,6 +24,8 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     }
 ];
 
+  // Datos de credenciales
+
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");
 
@@ -56,3 +58,26 @@ if (nombre) {
     var nombreUsuarioElement = document.getElementById('nombre-usuario');
     nombreUsuarioElement.textContent = nombre;
 }
+
+
+//Aviso de agradecimiento
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén el formulario por su ID
+    const formulario = document.querySelector("form");
+
+    // Agrega un evento de escucha para el evento "submit" del formulario
+    formulario.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Muestra un mensaje de agradecimiento en un alert
+        const mensajeAgradecimiento = "Gracias por enviar el formulario.";
+        alert(mensajeAgradecimiento);
+
+        // También puedes realizar otras acciones aquí, como enviar el formulario al servidor si es necesario.
+
+        // Limpia el formulario después de mostrar el mensaje
+        formulario.reset();
+    });
+});
